@@ -1,0 +1,128 @@
+/* *
+{
+	background: #f1f2f6;
+	margin: 0;
+	padding: 0;
+} */
+
+/* .image-area
+{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+} */
+
+.img-wrapper {
+	width: 300px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrapper:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+
+.img-wrapper:hover:before {
+	left: -180%;
+}
+
+.img-wrapper img {
+	height: 400px;
+	width: 300px;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+
+.img-wrapper:hover img {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2 {
+	background: tomato;
+	font-family: Poppins;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: perspective(400px) rotateY(90deg);
+	transform-origin: right;
+	transition: 1s;
+}
+
+.img-wrapper:hover h2 {
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.view {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 10%; */
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.view:active,
+.view:focus,
+.view:hover {
+	border-color: #5d59a5;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+.button__delete {
+	font-size: 24px;
+	margin-left: auto;
+	color: #d92b2b;
+}
+
+.delete {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px 20px;
+	border-radius: 26px;
+	border: 1px solid #e96f75;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 10%; */
+	color: #df0f0f;
+	box-shadow: 0px 2px 2px #965656;
+	cursor: pointer;
+	transition: .2s;
+}

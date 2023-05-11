@@ -1,0 +1,20 @@
+.update_resume {
+    background: #fff;
+    font-size: 14px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6b8011;
+    box-shadow: 0px 2px 2px #5C5696;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.resume_wid {
+    max-width: 595px;
+}
+
